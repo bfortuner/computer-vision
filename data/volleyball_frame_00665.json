@@ -1,0 +1,460 @@
+{
+  "filename" : "volleyball_frame_00665.png",
+  "folder" : "images_subset",
+  "image_w_h" : [
+    1280,
+    720
+  ],
+  "objects" : [
+    {
+      "label" : "referee",
+      "x_y_w_h" : [
+        1154,
+        290,
+        44,
+        63
+      ]
+    },
+    {
+      "label" : "referee",
+      "x_y_w_h" : [
+        1221,
+        217,
+        52,
+        117
+      ]
+    },
+    {
+      "label" : "blue_team",
+      "x_y_w_h" : [
+        257,
+        268,
+        58,
+        178
+      ]
+    },
+    {
+      "label" : "blue_team",
+      "x_y_w_h" : [
+        462,
+        353,
+        48,
+        164
+      ]
+    },
+    {
+      "label" : "blue_team",
+      "x_y_w_h" : [
+        420,
+        341,
+        62,
+        200
+      ]
+    },
+    {
+      "label" : "blue_team",
+      "x_y_w_h" : [
+        518,
+        293,
+        65,
+        192
+      ]
+    },
+    {
+      "label" : "blue_team",
+      "x_y_w_h" : [
+        613,
+        345,
+        72,
+        196
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        938,
+        405,
+        68,
+        205
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        895,
+        431,
+        60,
+        211
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        709,
+        353,
+        79,
+        205
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        715,
+        386,
+        56,
+        196
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        408,
+        446,
+        97,
+        189
+      ]
+    },
+    {
+      "label" : "red_team",
+      "x_y_w_h" : [
+        251,
+        414,
+        99,
+        221
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1092,
+        428,
+        19,
+        20
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1223,
+        680,
+        43,
+        35
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1191,
+        562,
+        29,
+        24
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1014,
+        431,
+        32,
+        28
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1116,
+        468,
+        26,
+        30
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        827,
+        388,
+        32,
+        19
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1118,
+        615,
+        41,
+        27
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        9,
+        596,
+        11,
+        14
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        9,
+        420,
+        37,
+        35
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        188,
+        422,
+        35,
+        11
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        351,
+        384,
+        48,
+        20
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1113,
+        393,
+        25,
+        20
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        19,
+        525,
+        41,
+        33
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1091,
+        548,
+        47,
+        32
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1178,
+        626,
+        55,
+        46
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        1060,
+        459,
+        44,
+        41
+      ]
+    },
+    {
+      "label" : "court_outer",
+      "x_y_w_h" : [
+        60,
+        433,
+        44,
+        44
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        1016,
+        565,
+        29,
+        17
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        1006,
+        524,
+        20,
+        17
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        872,
+        455,
+        23,
+        22
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        833,
+        564,
+        33,
+        22
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        119,
+        553,
+        36,
+        27
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        373,
+        515,
+        18,
+        24
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        533,
+        522,
+        40,
+        17
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        682,
+        454,
+        22,
+        23
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        191,
+        517,
+        28,
+        22
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        360,
+        615,
+        36,
+        33
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        359,
+        560,
+        31,
+        22
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        826,
+        523,
+        29,
+        18
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        397,
+        461,
+        24,
+        23
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        628,
+        558,
+        37,
+        24
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        721,
+        610,
+        46,
+        43
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        957,
+        635,
+        34,
+        34
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        1015,
+        636,
+        60,
+        48
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        183,
+        460,
+        42,
+        35
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        61,
+        617,
+        47,
+        43
+      ]
+    },
+    {
+      "label" : "court-inner",
+      "x_y_w_h" : [
+        131,
+        606,
+        61,
+        54
+      ]
+    }
+  ]
+}

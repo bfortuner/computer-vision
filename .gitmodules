@@ -1,0 +1,4 @@
+[submodule "utils/clients/tfmodels"]
+	path = utils/clients/tfmodels
+	url = git@github.com:tensorflow/models.git
+	ignore = dirty
