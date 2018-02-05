@@ -5,6 +5,7 @@ data/ball_tracking
 data/volleyball/
 .ipynb_checkpoints
 *~
+Mask_RCNN/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
