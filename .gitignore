@@ -6,6 +6,7 @@ data/volleyball/
 .ipynb_checkpoints
 *~
 Mask_RCNN/
+data/cifar*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
