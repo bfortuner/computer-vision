@@ -78,7 +78,6 @@ def init_weights(layer, conv_init, fc_init):
 def cut_model(model, cut):
     return nn.Sequential(*list(model.children())[:cut])
 
-
 def get_resnet18(pretrained, n_freeze):
     resnet = torchvision.models.resnet18(pretrained)
     if n_freeze > 0:
@@ -98,3 +97,27 @@ def get_resnet50(pretrained, n_freeze):
     if n_freeze > 0:
         freeze_layers(resnet, n_freeze)
     return resnet
+
+class Resnet(nn.Module):
+    def __init__(self, resnet, classifier):
+        super().__init__()
+        self.resnet = resnet
+        self.ap = nn.AdaptiveAvgPool2d((1,1))
+        self.classifier = classifier
+
+    def forward(self, x):
+        x = self.resnet(x)
+        x = self.ap(x)
+        x = x.view(x.size(0), -1)
+        x = self.classifier(x)
+        return x
+
+def get_classifier(in_chans, n_classes):
+    return nn.Sequential(
+        nn.Linear(in_chans, 128),
+        nn.BatchNorm1d(128),
+        nn.ReLU(),
+        nn.Dropout(0.5),
+        nn.Linear(128, n_classes),
+        nn.Softmax()
+    )

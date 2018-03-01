@@ -102,25 +102,25 @@ def get_cifar_loader():
         transforms.RandomCrop(32),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
-        #normTransform
+        normTransform
     ])
     testTransform = transforms.Compose([
         transforms.ToTensor(),
-        #normTransform
+        normTransform
     ])
 
     trainset = torchvision.datasets.CIFAR10(root='../data', train=True,
                                             download=True, transform=trainTransform)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=64,
-                                            shuffle=True, num_workers=2)
+                                              shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR10(root='../data', train=False,
-                                        download=True, transform=testTransform)
+                                           download=True, transform=testTransform)
     testloader = torch.utils.data.DataLoader(testset, batch_size=64,
                                             shuffle=False, num_workers=2)
 
     classes = ('plane', 'car', 'bird', 'cat',
-            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+               'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
     return trainloader, testloader, classes
 
@@ -140,9 +140,9 @@ def get_catsdogs_loader(imgs_dir):
             #    class_to_idx, classname)
             targs.append(class_to_idx[classname])
         return targs
-    
+
     normalize = transforms.Normalize(
-        mean=[0.485, 0.456, 0.406], 
+        mean=[0.485, 0.456, 0.406],
         std=[0.229, 0.224, 0.225])
 
     trainTransform = transforms.Compose([
@@ -157,12 +157,12 @@ def get_catsdogs_loader(imgs_dir):
         transforms.ToTensor(),
         normalize
     ])
-    
+
     fpaths = glob.glob(imgs_dir + '*.jpg')
     random.shuffle(fpaths)
     trn_fpaths = fpaths[:20000]
     val_fpaths = fpaths[20000:]
-    
+
     trn_targs = get_targs_from_fpaths(trn_fpaths)
     val_targs = get_targs_from_fpaths(val_fpaths)
 
