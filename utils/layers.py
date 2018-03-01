@@ -5,16 +5,16 @@ import torch.nn as nn
 def conv_relu(in_channels, out_channels, kernel_size=3, stride=1,
               padding=1, bias=True):
     return [
-        nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size, 
+        nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size,
             stride=stride, padding=padding, bias=bias),
         nn.ReLU(inplace=True),
     ]
 
-def conv_bn_relu(in_channels, out_channels, kernel_size=3, stride=1, 
+def conv_bn_relu(in_channels, out_channels, kernel_size=3, stride=1,
                  padding=1, bias=False):
     return [
         nn.Conv2d(in_channels, out_channels, kernel_size=kernel_size,
-        stride=stride, padding=padding, bias=bias),
+                  stride=stride, padding=padding, bias=bias),
         nn.BatchNorm2d(out_channels),
         nn.ReLU(inplace=True),
     ]

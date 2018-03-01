@@ -46,19 +46,20 @@ def train(net, dataloader, criterion, optimizer):
     for data in dataloader:
         inputs = Variable(data[0].cuda())
         targets = Variable(data[1].cuda())
-        
-        output = net(inputs)        
-        net.zero_grad()
+
+        output = net(inputs)
         loss = criterion(output, targets)
+
+        optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-    
+
         preds = predictions.get_argmax(output)
         accuracy = get_accuracy(preds, targets.data.cpu().numpy())
-    
+
         total_loss += loss.data[0]
         total_acc += accuracy
-    
+
     mean_loss = total_loss / n_batches
     mean_acc = total_acc / n_batches
     return mean_loss, mean_acc
@@ -89,7 +90,7 @@ class Trainer():
     def __init__(self, metrics):
         self.metrics = metrics
 
-    def train(self, model, optim, lr_adjuster, criterion, trn_loader, 
+    def train(self, model, optim, lr_adjuster, criterion, trn_loader,
               val_loader, n_epochs, n_classes):
         start_epoch = 1
         end_epoch = start_epoch + n_epochs
@@ -99,7 +100,7 @@ class Trainer():
 
             ### Train ###
             trn_start_time = time.time()
-            trn_metrics = train_model(model, trn_loader, optim, criterion, 
+            trn_metrics = train_model(model, trn_loader, optim, criterion,
                                       lr_adjuster, epoch, self.metrics)
             trn_msg = log_trn_msg(trn_start_time, trn_metrics, current_lr, epoch)
             print(trn_msg)
@@ -114,8 +115,8 @@ class Trainer():
             if lr_adjuster.iteration_type == 'epoch':
                 lr_adjuster.adjust(optim, epoch+1)
 
-                
-def train_model(model, dataloader, optimizer, criterion, 
+
+def train_model(model, dataloader, optimizer, criterion,
                 lr_adjuster, epoch, metrics):
     model.train()
     n_batches = len(dataloader)
@@ -157,7 +158,7 @@ def test_model(model, loader, criterion, metrics, n_classes):
     loss = 0
     probs = np.empty((0, n_classes))
     metric_totals = {m.name:0 for m in metrics}
-    
+
     for data in loader:
         inputs = Variable(data[0].cuda(async=True), volatile=True)
         targets = Variable(data[1].cuda(async=True), volatile=True)
