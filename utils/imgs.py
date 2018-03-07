@@ -3,8 +3,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 from . import files
+import torchvision
 
 
+def plot_tensor(img, fs=(10,10), title=""):
+    if len(img.size()) == 4:
+        img = img.squeeze(dim=0)
+    npimg = img.numpy()
+    plt.figure(figsize=fs)
+    plt.imshow(np.transpose(npimg, (1, 2, 0)), cmap='gray')
+    plt.title(title)
+    plt.show()
+
+def plot_batch(samples, title="", fs=(10,10)):
+    plot_tensor(torchvision.utils.make_grid(samples), fs=fs, title=title)
+
+def plot_metric(trn, tst, title):
+    plt.plot(np.stack([trn, tst], 1));
+    plt.title(title)
+    plt.show()
 
 def load_img_as_arr(img_path):
     return plt.imread(img_path)

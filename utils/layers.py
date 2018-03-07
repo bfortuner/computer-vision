@@ -1,6 +1,18 @@
-
 import torch.nn as nn
 
+
+class CenterCrop(nn.Module):
+    def __init__(self, height, width):
+        super().__init__()
+        self.height = height
+        self.width = width
+
+    def forward(self, img):
+        bs, c, h, w = img.size()
+        xy1 = (w - self.width) // 2
+        xy2 = (h - self.height) // 2
+        img = img[:, :, xy2:(xy2 + self.height), xy1:(xy1 + self.width)]
+        return img
 
 def conv_relu(in_channels, out_channels, kernel_size=3, stride=1,
               padding=1, bias=True):
