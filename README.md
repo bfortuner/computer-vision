@@ -38,19 +38,19 @@ Implementations of important computer vision and machine learning concepts.
 Solutions to common tasks with popular libraries: OpenCV, PyTorch, Scikit-learn..
 
 * Classification
-** ResNet
-** SqueezeNet
+    * ResNet
+    * SqueezeNet
 * Object Detection
 * Multi-Object Tracking
-** Ball Tracking
-** Player Tracking
+    * Ball Tracking
+    * Player Tracking
 * Image Processing
-** Grayscale
+    * Grayscale
 * Segmentation
-** FC-DenseNet
-** UNet
+    * FC-DenseNet
+    * UNet
 * SfM
-** Image Stitching
+    * Image Stitching
 
 ## Problems
 
