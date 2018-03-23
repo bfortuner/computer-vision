@@ -1,45 +1,72 @@
-# VisionQuest
-Hacker's guide to computer vision and machine learning.
+# Computer Vision
+Self-study guide for traditional and ML-based computer vision techniques
 
-## Contents
-
-### Theory
+## Theory
 
 Implementations of important computer vision and machine learning concepts.
 
-**Computer Vision**
+### Computer Vision
+* Background Subtraction
+* Colorspace
+* Features
+* Filters
+* Geometry
+  * Affine transforms
+  * Projective transforms
+* HOG Features
+* Histograms
+* Homography
+* Hough Transform
+* Image Gradients
+* K-Means
+* Kalman Filter
 * Linear algebra
   * Vectors
   * Matrices
-* Geometric transforms
-  * Affine
-  * Projective
-* Camera calibration
-* Image processing
+* Morphological Operations
+* Optical Flow
+* Segmentation
+* Thresholding
 
-**Machine Learning**
-* Linear regression
-* Logistic regression
-* Activation functions
-* Loss functions
-* Neural network
+### Deep Learning
+* Autoencoder
 * CNN
-* RNN
+* GAN
+* VAE
 
-### Applied
+## Applied
 Solutions to common tasks with popular libraries: OpenCV, PyTorch, Scikit-learn..
 
 * Classification
+** ResNet
+** SqueezeNet
 * Object Detection
-* Segmentation
+* Multi-Object Tracking
+** Ball Tracking
+** Player Tracking
 * Image Processing
-* Structure From Motion
+** Grayscale
+* Segmentation
+** FC-DenseNet
+** UNet
+* SfM
+** Image Stitching
 
-### Problems
+## Problems
 
-Practice problems and solutions. Mostly computer science fundamentals with a slight focus on computer vision.
+Coding problems and solutions. Mostly computer science fundamentals with a slight focus on computer vision.
 
-### Papers
+* Arrays
+* Matrix
+* HashMap
+* Stacks/Queues
+* Strings
+* Dynamic Programming
+* LinkedLists
+* Recursion
+* Trees
+
+## Papers
 
 Notes on interesting computer vision papers.
 
